@@ -1,0 +1,1118 @@
+action_dim: 10
+actor_name: Actor_LSTM_v2
+buffer_size: 60000
+checkpoint_dir: checkpoints
+clock_type: null
+cmd_noise:
+- 0
+- 0
+- 0
+cmd_noise_prob: 0
+critic_name: Critic_LSTM_v2
+device: cuda:0
+empty_cuda_cache: false
+entropy_coef: 0.01
+env_name: Cassiepede
+eps: 1.0e-05
+epsilon: 0.2
+eval_buffer_size: 3000
+evaluate_freq: 4
+force_prob: 0
+gamma: 0.95
+grad_clip: 0.05
+hidden_dim: null
+kl_check: true
+kl_check_min_itr: 2
+kl_threshold: 0.2
+lamda: 1
+lr_a: 0.0003
+lr_c: 0.0003
+lstm_hidden_dim: 64
+lstm_num_layers: 2
+mask_tarsus_input: false
+max_steps: 100000000000
+mini_batch_size: 32
+mirror_loss: []
+model_save_steps: 50000000
+n_collectors: 120
+n_evaluators: 0
+num_cassie_prob: '1.0'
+num_epoch: 5
+num_param_actor: 61579
+num_param_critic: 60993
+parent_run: '2024-08-11 16:38:29.291411'
+perturbation_force: 0
+perturbation_torque: 0
+poi_heading_range: 0
+poi_position_offset: 0
+position_offset: 0
+previous_checkpoint: null
+previous_config:
+  action_dim: 10
+  actor_name: Actor_LSTM_v2
+  buffer_size: 60000
+  checkpoint_dir: checkpoints
+  clock_type: null
+  cmd_noise:
+  - 0
+  - 0
+  - 0
+  cmd_noise_prob: 0
+  critic_name: Critic_LSTM_v2
+  device: cuda:0
+  empty_cuda_cache: false
+  entropy_coef: 0.01
+  env_name: Cassiepede
+  eps: 1.0e-05
+  epsilon: 0.2
+  eval_buffer_size: 3000
+  evaluate_freq: 4
+  force_prob: 0
+  gamma: 0.95
+  grad_clip: 0.05
+  hidden_dim: null
+  kl_check: true
+  kl_check_min_itr: 2
+  kl_threshold: 0.2
+  lamda: 1
+  lr_a: 0.0003
+  lr_c: 0.0003
+  lstm_hidden_dim: 64
+  lstm_num_layers: 2
+  mask_tarsus_input: false
+  max_steps: 100000000000
+  mini_batch_size: 32
+  model_save_steps: 50000000
+  n_collectors: 120
+  n_evaluators: 0
+  num_cassie_prob:
+  - 0.3333333333333333
+  - 0.3333333333333333
+  - 0.3333333333333333
+  num_epoch: 5
+  num_param_actor: 61579
+  num_param_critic: 60993
+  parent_run: '2024-08-11 14:31:09.469948'
+  perturbation_force: 0
+  perturbation_torque: 0
+  poi_heading_range: 1.05
+  poi_position_offset: 1.5
+  position_offset: 1
+  previous_checkpoint: null
+  previous_config:
+    action_dim: 10
+    actor_name: Actor_LSTM_v2
+    buffer_size: 40000
+    checkpoint_dir: checkpoints
+    clock_type: null
+    cmd_noise:
+    - 0
+    - 0
+    - 0
+    cmd_noise_prob: 0
+    critic_name: Critic_LSTM_v2
+    device: cuda:0
+    empty_cuda_cache: false
+    entropy_coef: 0.01
+    env_name: Cassiepede
+    eps: 1.0e-05
+    epsilon: 0.2
+    eval_buffer_size: 3000
+    evaluate_freq: 4
+    force_prob: 0
+    gamma: 0.95
+    grad_clip: 0.05
+    hidden_dim: null
+    kl_check: true
+    kl_check_min_itr: 2
+    kl_threshold: 0.2
+    lamda: 1
+    lr_a: 0.0003
+    lr_c: 0.0003
+    lstm_hidden_dim: 64
+    lstm_num_layers: 2
+    mask_tarsus_input: false
+    max_steps: 100000000000
+    mini_batch_size: 32
+    model_save_steps: 50000000
+    n_collectors: 80
+    n_evaluators: 0
+    num_cassie_prob:
+    - 0.3333333333333333
+    - 0.3333333333333333
+    - 0.3333333333333333
+    num_epoch: 5
+    num_param_actor: 61579
+    num_param_critic: 60993
+    parent_run: '2024-08-11 00:16:45.318297'
+    perturbation_force: 0
+    perturbation_torque: 0
+    poi_heading_range: 1.05
+    poi_position_offset: 1.5
+    position_offset: 1
+    previous_checkpoint: null
+    previous_config:
+      action_dim: 10
+      actor_name: Actor_LSTM_v2
+      buffer_size: 40000
+      checkpoint_dir: checkpoints
+      clock_type: null
+      cmd_noise:
+      - 0
+      - 0
+      - 0
+      cmd_noise_prob: 0
+      critic_name: Critic_LSTM_v2
+      device: cuda:0
+      empty_cuda_cache: false
+      entropy_coef: 0.01
+      env_name: Cassiepede
+      eps: 1.0e-05
+      epsilon: 0.2
+      eval_buffer_size: 3000
+      evaluate_freq: 4
+      force_prob: 0
+      gamma: 0.95
+      grad_clip: 0.05
+      hidden_dim: null
+      kl_check: true
+      kl_check_min_itr: 2
+      kl_threshold: 0.2
+      lamda: 1
+      lr_a: 0.0003
+      lr_c: 0.0003
+      lstm_hidden_dim: 64
+      lstm_num_layers: 2
+      mask_tarsus_input: false
+      max_steps: 100000000000
+      mini_batch_size: 32
+      model_save_steps: 50000000
+      n_collectors: 80
+      n_evaluators: 0
+      num_cassie_prob:
+      - 0.3333333333333333
+      - 0.3333333333333333
+      - 0.3333333333333333
+      num_epoch: 5
+      num_param_actor: 61579
+      num_param_critic: 60993
+      parent_run: '2024-05-20 19:05:06.757875'
+      perturbation_force: 0
+      perturbation_torque: 0
+      poi_heading_range: 1.05
+      poi_position_offset: 1.5
+      position_offset: 1
+      previous_checkpoint: null
+      previous_config:
+        action_dim: 10
+        actor_name: Actor_LSTM_v2
+        buffer_size: 60000
+        checkpoint_dir: checkpoints
+        clock_type: null
+        cmd_noise:
+        - 0
+        - 0
+        - 0
+        cmd_noise_prob: 0
+        critic_name: Critic_LSTM_v2
+        device: cuda:0
+        empty_cuda_cache: false
+        entropy_coef: 0.01
+        env_name: Cassiepede
+        eps: 1.0e-05
+        epsilon: 0.2
+        eval_buffer_size: 3000
+        evaluate_freq: 4
+        force_prob: 0
+        gamma: 0.95
+        grad_clip: 0.05
+        hidden_dim: null
+        kl_check: true
+        kl_check_min_itr: 2
+        kl_threshold: 0.2
+        lamda: 1
+        lr_a: 0.0003
+        lr_c: 0.0003
+        lstm_hidden_dim: 64
+        lstm_num_layers: 2
+        mask_tarsus_input: false
+        max_steps: 100000000000
+        mini_batch_size: 32
+        model_save_steps: 50000000
+        n_collectors: 120
+        n_evaluators: 0
+        num_cassie_prob: '1.0'
+        num_epoch: 5
+        num_param_actor: 61579
+        num_param_critic: 60993
+        parent_run: '2024-08-04 16:42:27.529996'
+        perturbation_force: 0
+        perturbation_torque: 0
+        poi_heading_range: 0
+        poi_position_offset: 0
+        position_offset: 0
+        previous_checkpoint: null
+        previous_configs:
+        - action_dim: 10
+          actor_name: Actor_LSTM_v2
+          buffer_size: 60000
+          clock_type: null
+          cmd_noise:
+          - 0
+          - 0
+          - 0
+          cmd_noise_prob: 0
+          critic_name: Critic_LSTM_v2
+          device: cuda:0
+          empty_cuda_cache: false
+          entropy_coef: 0.01
+          env_name: Cassiepede
+          eps: 1.0e-05
+          epsilon: 0.2
+          eval_buffer_size: 3000
+          evaluate_freq: 4
+          force_prob: 0.1
+          gamma: 0.95
+          grad_clip: 0.05
+          hidden_dim: 64
+          kl_check: true
+          kl_check_min_itr: 2
+          kl_threshold: 0.2
+          lamda: 1
+          lr_a: 0.0003
+          lr_c: 0.0003
+          lstm_hidden_dim: 64
+          lstm_num_layers: 2
+          mask_tarsus_input: false
+          max_steps: 100000000000
+          mini_batch_size: 32
+          model_save_steps: 50000000
+          n_collectors: 120
+          n_evaluators: 6
+          num_cassie_prob:
+          - 0.3333333333333333
+          - 0.3333333333333333
+          - 0.3333333333333333
+          num_epoch: 5
+          parent_run: '2024-05-22 22:31:11.028990'
+          perturbation_force: 50
+          poi_heading_range: 1.05
+          poi_position_offset: 1.5
+          position_offset: 1
+          previous_checkpoint: null
+          previous_run: '2024-05-20 19:05:06.757875'
+          project_name: roadrunner_cassiepede
+          reward_name: locomotion_cassiepede_feetairtime_modified
+          run_name: '2024-05-22 22:34:03.462621'
+          seed: 0
+          set_adam_eps: true
+          state_dim:
+            base_ang_vel:
+            - 3
+            base_orient_cmd:
+            - 4
+            base_yaw_poi:
+            - 1
+            cmd:
+            - 4
+            encoding:
+            - 2
+            joint_pos:
+            - 4
+            joint_vel:
+            - 4
+            motor_pos:
+            - 10
+            motor_vel:
+            - 10
+          std: 0.13
+          time_horizon: 500
+          use_adv_norm: true
+          use_grad_clip: true
+          use_lr_decay: true
+          use_mirror_loss: false
+          use_orthogonal_init: true
+          use_reward_scaling: false
+          wandb_mode: online
+        - action_dim: 10
+          actor_name: Actor_LSTM_v12
+          buffer_size: 60000
+          checkpoint_dir: checkpoints
+          clock_type: null
+          cmd_noise:
+          - 0
+          - 0
+          - 0
+          cmd_noise_prob: 0
+          critic_name: Critic_LSTM_v12
+          device: cuda:0
+          empty_cuda_cache: false
+          entropy_coef: 0.01
+          env_name: Cassiepede
+          eps: 1.0e-05
+          epsilon: 0.2
+          eval_buffer_size: 3000
+          evaluate_freq: 4
+          force_prob: 0
+          gamma: 0.95
+          grad_clip: 0.05
+          hidden_dim: null
+          kl_check: true
+          kl_check_min_itr: 2
+          kl_threshold: 0.2
+          lamda: 1
+          lr_a: 0.0003
+          lr_c: 0.0003
+          lstm_hidden_dim: 64
+          lstm_num_layers: 2
+          mask_tarsus_input: false
+          max_steps: 100000000000
+          mini_batch_size: 32
+          model_save_steps: 50000000
+          n_collectors: 120
+          n_evaluators: 0
+          num_cassie_prob: '1.0'
+          num_epoch: 5
+          num_param_actor: 266005
+          num_param_critic: 264834
+          parent_run: '2024-05-22 22:34:03.462621'
+          perturbation_force: 0
+          perturbation_torque: 0
+          poi_heading_range: 0
+          poi_position_offset: 0
+          position_offset: 0
+          previous_checkpoint: null
+          previous_configs:
+          - action_dim: 10
+            actor_name: Actor_LSTM_v2
+            buffer_size: 60000
+            clock_type: null
+            cmd_noise:
+            - 0
+            - 0
+            - 0
+            cmd_noise_prob: 0
+            critic_name: Critic_LSTM_v2
+            device: cuda:0
+            empty_cuda_cache: false
+            entropy_coef: 0.01
+            env_name: Cassiepede
+            eps: 1.0e-05
+            epsilon: 0.2
+            eval_buffer_size: 3000
+            evaluate_freq: 4
+            force_prob: 0.1
+            gamma: 0.95
+            grad_clip: 0.05
+            hidden_dim: 64
+            kl_check: true
+            kl_check_min_itr: 2
+            kl_threshold: 0.2
+            lamda: 1
+            lr_a: 0.0003
+            lr_c: 0.0003
+            lstm_hidden_dim: 64
+            lstm_num_layers: 2
+            mask_tarsus_input: false
+            max_steps: 100000000000
+            mini_batch_size: 32
+            model_save_steps: 50000000
+            n_collectors: 120
+            n_evaluators: 6
+            num_cassie_prob:
+            - 0.3333333333333333
+            - 0.3333333333333333
+            - 0.3333333333333333
+            num_epoch: 5
+            parent_run: '2024-05-22 22:31:11.028990'
+            perturbation_force: 50
+            poi_heading_range: 1.05
+            poi_position_offset: 1.5
+            position_offset: 1
+            previous_checkpoint: null
+            previous_run: '2024-05-20 19:05:06.757875'
+            project_name: roadrunner_cassiepede
+            reward_name: locomotion_cassiepede_feetairtime_modified
+            run_name: '2024-05-22 22:34:03.462621'
+            seed: 0
+            set_adam_eps: true
+            state_dim:
+              base_ang_vel:
+              - 3
+              base_orient_cmd:
+              - 4
+              base_yaw_poi:
+              - 1
+              cmd:
+              - 4
+              encoding:
+              - 2
+              joint_pos:
+              - 4
+              joint_vel:
+              - 4
+              motor_pos:
+              - 10
+              motor_vel:
+              - 10
+            std: 0.13
+            time_horizon: 500
+            use_adv_norm: true
+            use_grad_clip: true
+            use_lr_decay: true
+            use_mirror_loss: false
+            use_orthogonal_init: true
+            use_reward_scaling: false
+            wandb_mode: online
+          previous_run: '2024-05-20 19:05:06.757875'
+          project_name: roadrunner_cassiepede
+          reward_name: locomotion_cassiepede_feetairtime_modified
+          run_name: '2024-08-04 16:27:49.094528'
+          seed: 0
+          set_adam_eps: true
+          state_dim:
+            base_ang_vel:
+            - 1
+            - 3
+            base_orient_cmd:
+            - 1
+            - 4
+            base_yaw_poi:
+            - 1
+            - 1
+            cmd:
+            - 1
+            - 4
+            encoding:
+            - 1
+            - 2
+            hfield:
+            - 1
+            - 600
+            joint_pos:
+            - 1
+            - 4
+            joint_vel:
+            - 1
+            - 4
+            motor_pos:
+            - 1
+            - 10
+            motor_vel:
+            - 1
+            - 10
+          state_history_size: 1
+          std: 0.13
+          time_horizon: 500
+          transformer_dim_feedforward: null
+          transformer_hidden_dim: null
+          transformer_num_heads: null
+          transformer_num_layers: null
+          use_adv_norm: true
+          use_grad_clip: true
+          use_lr_decay: true
+          use_mirror_loss: false
+          use_orthogonal_init: true
+          use_reward_scaling: false
+          wandb_mode: online
+        - action_dim: 10
+          actor_name: Actor_LSTM_v2
+          buffer_size: 60000
+          checkpoint_dir: checkpoints
+          clock_type: null
+          cmd_noise:
+          - 0
+          - 0
+          - 0
+          cmd_noise_prob: 0
+          critic_name: Critic_LSTM_v2
+          device: cuda:0
+          empty_cuda_cache: false
+          entropy_coef: 0.01
+          env_name: Cassiepede
+          eps: 1.0e-05
+          epsilon: 0.2
+          eval_buffer_size: 3000
+          evaluate_freq: 4
+          force_prob: 0
+          gamma: 0.95
+          grad_clip: 0.05
+          hidden_dim: null
+          kl_check: true
+          kl_check_min_itr: 2
+          kl_threshold: 0.2
+          lamda: 1
+          lr_a: 0.0003
+          lr_c: 0.0003
+          lstm_hidden_dim: 64
+          lstm_num_layers: 2
+          mask_tarsus_input: false
+          max_steps: 100000000000
+          mini_batch_size: 32
+          model_save_steps: 50000000
+          n_collectors: 120
+          n_evaluators: 0
+          num_cassie_prob: '1.0'
+          num_epoch: 5
+          num_param_actor: 215179
+          num_param_critic: 214593
+          parent_run: '2024-08-04 16:27:49.094528'
+          perturbation_force: 0
+          perturbation_torque: 0
+          poi_heading_range: 0
+          poi_position_offset: 0
+          position_offset: 0
+          previous_checkpoint: null
+          previous_configs:
+          - action_dim: 10
+            actor_name: Actor_LSTM_v2
+            buffer_size: 60000
+            clock_type: null
+            cmd_noise:
+            - 0
+            - 0
+            - 0
+            cmd_noise_prob: 0
+            critic_name: Critic_LSTM_v2
+            device: cuda:0
+            empty_cuda_cache: false
+            entropy_coef: 0.01
+            env_name: Cassiepede
+            eps: 1.0e-05
+            epsilon: 0.2
+            eval_buffer_size: 3000
+            evaluate_freq: 4
+            force_prob: 0.1
+            gamma: 0.95
+            grad_clip: 0.05
+            hidden_dim: 64
+            kl_check: true
+            kl_check_min_itr: 2
+            kl_threshold: 0.2
+            lamda: 1
+            lr_a: 0.0003
+            lr_c: 0.0003
+            lstm_hidden_dim: 64
+            lstm_num_layers: 2
+            mask_tarsus_input: false
+            max_steps: 100000000000
+            mini_batch_size: 32
+            model_save_steps: 50000000
+            n_collectors: 120
+            n_evaluators: 6
+            num_cassie_prob:
+            - 0.3333333333333333
+            - 0.3333333333333333
+            - 0.3333333333333333
+            num_epoch: 5
+            parent_run: '2024-05-22 22:31:11.028990'
+            perturbation_force: 50
+            poi_heading_range: 1.05
+            poi_position_offset: 1.5
+            position_offset: 1
+            previous_checkpoint: null
+            previous_run: '2024-05-20 19:05:06.757875'
+            project_name: roadrunner_cassiepede
+            reward_name: locomotion_cassiepede_feetairtime_modified
+            run_name: '2024-05-22 22:34:03.462621'
+            seed: 0
+            set_adam_eps: true
+            state_dim:
+              base_ang_vel:
+              - 3
+              base_orient_cmd:
+              - 4
+              base_yaw_poi:
+              - 1
+              cmd:
+              - 4
+              encoding:
+              - 2
+              joint_pos:
+              - 4
+              joint_vel:
+              - 4
+              motor_pos:
+              - 10
+              motor_vel:
+              - 10
+            std: 0.13
+            time_horizon: 500
+            use_adv_norm: true
+            use_grad_clip: true
+            use_lr_decay: true
+            use_mirror_loss: false
+            use_orthogonal_init: true
+            use_reward_scaling: false
+            wandb_mode: online
+          - action_dim: 10
+            actor_name: Actor_LSTM_v12
+            buffer_size: 60000
+            checkpoint_dir: checkpoints
+            clock_type: null
+            cmd_noise:
+            - 0
+            - 0
+            - 0
+            cmd_noise_prob: 0
+            critic_name: Critic_LSTM_v12
+            device: cuda:0
+            empty_cuda_cache: false
+            entropy_coef: 0.01
+            env_name: Cassiepede
+            eps: 1.0e-05
+            epsilon: 0.2
+            eval_buffer_size: 3000
+            evaluate_freq: 4
+            force_prob: 0
+            gamma: 0.95
+            grad_clip: 0.05
+            hidden_dim: null
+            kl_check: true
+            kl_check_min_itr: 2
+            kl_threshold: 0.2
+            lamda: 1
+            lr_a: 0.0003
+            lr_c: 0.0003
+            lstm_hidden_dim: 64
+            lstm_num_layers: 2
+            mask_tarsus_input: false
+            max_steps: 100000000000
+            mini_batch_size: 32
+            model_save_steps: 50000000
+            n_collectors: 120
+            n_evaluators: 0
+            num_cassie_prob: '1.0'
+            num_epoch: 5
+            num_param_actor: 266005
+            num_param_critic: 264834
+            parent_run: '2024-05-22 22:34:03.462621'
+            perturbation_force: 0
+            perturbation_torque: 0
+            poi_heading_range: 0
+            poi_position_offset: 0
+            position_offset: 0
+            previous_checkpoint: null
+            previous_configs:
+            - action_dim: 10
+              actor_name: Actor_LSTM_v2
+              buffer_size: 60000
+              clock_type: null
+              cmd_noise:
+              - 0
+              - 0
+              - 0
+              cmd_noise_prob: 0
+              critic_name: Critic_LSTM_v2
+              device: cuda:0
+              empty_cuda_cache: false
+              entropy_coef: 0.01
+              env_name: Cassiepede
+              eps: 1.0e-05
+              epsilon: 0.2
+              eval_buffer_size: 3000
+              evaluate_freq: 4
+              force_prob: 0.1
+              gamma: 0.95
+              grad_clip: 0.05
+              hidden_dim: 64
+              kl_check: true
+              kl_check_min_itr: 2
+              kl_threshold: 0.2
+              lamda: 1
+              lr_a: 0.0003
+              lr_c: 0.0003
+              lstm_hidden_dim: 64
+              lstm_num_layers: 2
+              mask_tarsus_input: false
+              max_steps: 100000000000
+              mini_batch_size: 32
+              model_save_steps: 50000000
+              n_collectors: 120
+              n_evaluators: 6
+              num_cassie_prob:
+              - 0.3333333333333333
+              - 0.3333333333333333
+              - 0.3333333333333333
+              num_epoch: 5
+              parent_run: '2024-05-22 22:31:11.028990'
+              perturbation_force: 50
+              poi_heading_range: 1.05
+              poi_position_offset: 1.5
+              position_offset: 1
+              previous_checkpoint: null
+              previous_run: '2024-05-20 19:05:06.757875'
+              project_name: roadrunner_cassiepede
+              reward_name: locomotion_cassiepede_feetairtime_modified
+              run_name: '2024-05-22 22:34:03.462621'
+              seed: 0
+              set_adam_eps: true
+              state_dim:
+                base_ang_vel:
+                - 3
+                base_orient_cmd:
+                - 4
+                base_yaw_poi:
+                - 1
+                cmd:
+                - 4
+                encoding:
+                - 2
+                joint_pos:
+                - 4
+                joint_vel:
+                - 4
+                motor_pos:
+                - 10
+                motor_vel:
+                - 10
+              std: 0.13
+              time_horizon: 500
+              use_adv_norm: true
+              use_grad_clip: true
+              use_lr_decay: true
+              use_mirror_loss: false
+              use_orthogonal_init: true
+              use_reward_scaling: false
+              wandb_mode: online
+            previous_run: '2024-05-20 19:05:06.757875'
+            project_name: roadrunner_cassiepede
+            reward_name: locomotion_cassiepede_feetairtime_modified
+            run_name: '2024-08-04 16:27:49.094528'
+            seed: 0
+            set_adam_eps: true
+            state_dim:
+              base_ang_vel:
+              - 1
+              - 3
+              base_orient_cmd:
+              - 1
+              - 4
+              base_yaw_poi:
+              - 1
+              - 1
+              cmd:
+              - 1
+              - 4
+              encoding:
+              - 1
+              - 2
+              hfield:
+              - 1
+              - 600
+              joint_pos:
+              - 1
+              - 4
+              joint_vel:
+              - 1
+              - 4
+              motor_pos:
+              - 1
+              - 10
+              motor_vel:
+              - 1
+              - 10
+            state_history_size: 1
+            std: 0.13
+            time_horizon: 500
+            transformer_dim_feedforward: null
+            transformer_hidden_dim: null
+            transformer_num_heads: null
+            transformer_num_layers: null
+            use_adv_norm: true
+            use_grad_clip: true
+            use_lr_decay: true
+            use_mirror_loss: false
+            use_orthogonal_init: true
+            use_reward_scaling: false
+            wandb_mode: online
+          previous_run: '2024-05-20 19:05:06.757875'
+          project_name: roadrunner_cassiepede
+          reward_name: locomotion_cassiepede_feetairtime_modified
+          run_name: '2024-08-04 16:42:27.529996'
+          seed: 0
+          set_adam_eps: true
+          state_dim:
+            base_ang_vel:
+            - 1
+            - 3
+            base_orient_cmd:
+            - 1
+            - 4
+            base_yaw_poi:
+            - 1
+            - 1
+            cmd:
+            - 1
+            - 4
+            encoding:
+            - 1
+            - 2
+            hfield:
+            - 1
+            - 600
+            joint_pos:
+            - 1
+            - 4
+            joint_vel:
+            - 1
+            - 4
+            motor_pos:
+            - 1
+            - 10
+            motor_vel:
+            - 1
+            - 10
+          state_history_size: 1
+          std: 0.13
+          time_horizon: 500
+          transformer_dim_feedforward: null
+          transformer_hidden_dim: null
+          transformer_num_heads: null
+          transformer_num_layers: null
+          use_adv_norm: true
+          use_grad_clip: true
+          use_lr_decay: true
+          use_mirror_loss: false
+          use_orthogonal_init: true
+          use_reward_scaling: false
+          wandb_mode: online
+        previous_run: '2024-05-20 19:05:06.757875'
+        project_name: roadrunner_cassiepede
+        reward_name: locomotion_cassiepede_feetairtime_modified
+        run_name: '2024-08-04 16:43:19.372572'
+        seed: 0
+        set_adam_eps: true
+        state_dim:
+          base_ang_vel:
+          - 1
+          - 3
+          base_orient_cmd:
+          - 1
+          - 4
+          base_yaw_poi:
+          - 1
+          - 1
+          cmd:
+          - 1
+          - 4
+          encoding:
+          - 1
+          - 2
+          joint_pos:
+          - 1
+          - 4
+          joint_vel:
+          - 1
+          - 4
+          motor_pos:
+          - 1
+          - 10
+          motor_vel:
+          - 1
+          - 10
+        state_history_size: 1
+        std: 0.13
+        time_horizon: 500
+        transformer_dim_feedforward: null
+        transformer_hidden_dim: null
+        transformer_num_heads: null
+        transformer_num_layers: null
+        use_adv_norm: true
+        use_grad_clip: true
+        use_lr_decay: true
+        use_mirror_loss: false
+        use_orthogonal_init: true
+        use_reward_scaling: false
+        wandb_mode: online
+      previous_run: '2024-05-20 19:05:06.757875'
+      project_name: roadrunner_cassiepede
+      reward_name: locomotion_cassiepede_feetairtime_modified
+      run_name: '2024-08-11 00:16:45.318297'
+      seed: 0
+      set_adam_eps: true
+      state_dim:
+        base_ang_vel:
+        - 1
+        - 3
+        base_orient_cmd:
+        - 1
+        - 4
+        base_yaw_poi:
+        - 1
+        - 1
+        cmd:
+        - 1
+        - 4
+        encoding:
+        - 1
+        - 2
+        joint_pos:
+        - 1
+        - 4
+        joint_vel:
+        - 1
+        - 4
+        motor_pos:
+        - 1
+        - 10
+        motor_vel:
+        - 1
+        - 10
+      state_history_size: 1
+      std: 0.13
+      time_horizon: 500
+      transformer_dim_feedforward: null
+      transformer_hidden_dim: null
+      transformer_num_heads: null
+      transformer_num_layers: null
+      use_adv_norm: true
+      use_grad_clip: true
+      use_lr_decay: true
+      use_mirror_loss: true
+      use_orthogonal_init: true
+      use_reward_scaling: false
+      wandb_mode: online
+    previous_run: '2024-08-11 00:16:45.318297'
+    project_name: roadrunner_cassiepede
+    reward_name: locomotion_cassiepede_feetairtime_modified
+    run_name: '2024-08-11 14:31:09.469948'
+    seed: 0
+    set_adam_eps: true
+    state_dim:
+      base_ang_vel:
+      - 1
+      - 3
+      base_orient_cmd:
+      - 1
+      - 4
+      base_yaw_poi:
+      - 1
+      - 1
+      cmd:
+      - 1
+      - 4
+      encoding:
+      - 1
+      - 2
+      joint_pos:
+      - 1
+      - 4
+      joint_vel:
+      - 1
+      - 4
+      motor_pos:
+      - 1
+      - 10
+      motor_vel:
+      - 1
+      - 10
+    state_history_size: 1
+    std: 0.13
+    time_horizon: 500
+    transformer_dim_feedforward: null
+    transformer_hidden_dim: null
+    transformer_num_heads: null
+    transformer_num_layers: null
+    use_adv_norm: true
+    use_grad_clip: true
+    use_lr_decay: true
+    use_mirror_loss: true
+    use_orthogonal_init: true
+    use_reward_scaling: false
+    wandb_mode: online
+  previous_run: '2024-08-11 14:31:09.469948'
+  project_name: roadrunner_cassiepede
+  reward_name: locomotion_cassiepede_feetairtime_modified
+  run_name: '2024-08-11 16:38:29.291411'
+  seed: 0
+  set_adam_eps: true
+  state_dim:
+    base_ang_vel:
+    - 1
+    - 3
+    base_orient_cmd:
+    - 1
+    - 4
+    base_yaw_poi:
+    - 1
+    - 1
+    cmd:
+    - 1
+    - 4
+    encoding:
+    - 1
+    - 2
+    joint_pos:
+    - 1
+    - 4
+    joint_vel:
+    - 1
+    - 4
+    motor_pos:
+    - 1
+    - 10
+    motor_vel:
+    - 1
+    - 10
+  state_history_size: 1
+  std: 0.13
+  time_horizon: 500
+  transformer_dim_feedforward: null
+  transformer_hidden_dim: null
+  transformer_num_heads: null
+  transformer_num_layers: null
+  use_adv_norm: true
+  use_grad_clip: true
+  use_lr_decay: true
+  use_mirror_loss: true
+  use_orthogonal_init: true
+  use_reward_scaling: false
+  wandb_mode: online
+previous_run: '2024-08-11 16:38:29.291411'
+project_name: roadrunner_cassiepede
+reward_name: locomotion_cassiepede_feetairtime_modified
+run_name: '2024-08-12 00:13:36.585606'
+seed: 0
+set_adam_eps: true
+state_dim:
+  base_ang_vel:
+  - 1
+  - 3
+  base_orient_cmd:
+  - 1
+  - 4
+  base_yaw_poi:
+  - 1
+  - 1
+  cmd:
+  - 1
+  - 4
+  encoding:
+  - 1
+  - 2
+  joint_pos:
+  - 1
+  - 4
+  joint_vel:
+  - 1
+  - 4
+  motor_pos:
+  - 1
+  - 10
+  motor_vel:
+  - 1
+  - 10
+state_history_size: 1
+std: 0.13
+time_horizon: 500
+transformer_dim_feedforward: null
+transformer_hidden_dim: null
+transformer_num_heads: null
+transformer_num_layers: null
+use_adv_norm: true
+use_grad_clip: true
+use_lr_decay: true
+use_orthogonal_init: true
+use_reward_scaling: false
+wandb_mode: online
