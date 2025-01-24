@@ -1,24 +1,43 @@
-# Decentralized Multi-Biped Controller
+# Decentralized Multi-Biped Controller (DecMBC)
 
-This code is heavily adopted from https://github.com/osudrl/roadrunner
+Payload transport over varying terrain via highly configurable multi-biped robot carriers.
 
-Website link: https://decmbc.github.io/
+[![Demo Video](https://img.shields.io/badge/Watch-Demo-red)](https://www.youtube.com/watch?v=2sJQCBaYKsw)
+[![Paper](https://img.shields.io/badge/Read-Paper-blue)](https://arxiv.org/abs/2406.17279)
+[![Website](https://img.shields.io/badge/Visit-Website-green)](https://decmbc.github.io/)
 
-Paper link: https://arxiv.org/abs/2406.17279
+## Overview
 
-Demo link: https://www.youtube.com/watch?v=2sJQCBaYKsw
+This project implements a decentralized control strategy for multi-legged robots, building upon the work from [RoadRunner](https://github.com/osudrl/roadrunner). Please follow the RoadRunner repository for environment setup. 
 
-### Steps to run the evaluation
+## Features
 
-1. To run the evaluation on the flat terrain with pretrained policy run
-`./scripts/eval_cassiepede.sh`
+- Decentralized control policy for multi-biped systems
+- Support for both flat and uneven terrain navigation
+- Pre-trained models for immediate testing
+- Customizable terrain configurations
 
-2. To run the evaluation on the uneven terrain with pretrained policy run
-`./scripts/eval_cassiepede_terrain.sh`
+## Quick Start
 
-3. Change command line argument in the script as requires. For example supply different terrain by changing terrain index in `--terrain`
+### Prerequisites
+ Follow instructions from [RoadRunner](https://github.com/osudrl/roadrunner)
 
-### Steps to run the training
+### Evaluation
 
-1. To run the training
-`./scripts/train_cassiepede.sh`
+1. **Flat Terrain Evaluation**
+   ```bash
+   ./scripts/eval_cassiepede.sh
+   ```
+
+2. **Uneven Terrain Evaluation**
+   ```bash
+   ./scripts/eval_cassiepede_terrain.sh
+   ```
+
+3. **Custom Terrain Configuration**
+   
+   Modify the terrain parameters in the evaluation scripts:
+   ```bash
+   # Example: Change terrain index
+   --terrain 2  # Choose from available terrain types (0-5)
+   ```
