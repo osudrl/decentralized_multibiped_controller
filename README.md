@@ -2,6 +2,10 @@
 
 This code is heavily adopted from https://github.com/osudrl/roadrunner
 
+Website link: https://decmbc.github.io/
+Paper link: https://arxiv.org/abs/2406.17279
+Demo link: https://www.youtube.com/watch?v=2sJQCBaYKsw
+
 ### Steps to run the evaluation
 
 1. To run the evaluation on the flat terrain with pretrained policy run
