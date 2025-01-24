@@ -1,0 +1,40 @@
+export PYTHONPATH=.
+export WANDB_API_KEY="<your wandb api key goes here>"
+python algo/cassiepede/trainer.py \
+  --n_collectors 120 \
+  --n_evaluators 0 \
+  --time_horizon 500 \
+  --buffer_size 60000 \
+  --eval_buffer_size 3000 \
+  --evaluate_freq 4 \
+  --num_epoch 5 \
+  --mini_batch_size 32 \
+  --lstm_hidden_dim 64 \
+  --lstm_num_layers 2 \
+  --use_orthogonal_init \
+  --set_adam_eps \
+  --use_adv_norm \
+  --use_lr_decay \
+  --use_grad_clip \
+  --reward_name locomotion_cassiepede_feetairtime_modified \
+  --project_name roadrunner_cassiepede \
+  --device cuda:0 \
+  --position_offset 1.0 \
+  --poi_heading_range 1.05 \
+  --poi_position_offset 1.5 \
+  --entropy_coef 0.01 \
+  --num_cassie_prob 1 1 1 \
+  --perturbation_force 50.0 \
+  --perturbation_torque 25.0 \
+  --force_prob 0.1 \
+  --cmd_noise 0.0 0.0 0.0 \
+  --cmd_noise_prob 0.0 \
+  --wandb_mode online \
+  --std 0.13 \
+  --state_history_size 1 \
+  --gamma 0.95 \
+  --actor_name Actor_LSTM_v2 \
+  --actor_name Actor_LSTM_v2 \
+  --kl_check_min_itr 2 \
+  --kl_check \
+  --mirror_loss supervised 
