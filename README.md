@@ -8,7 +8,7 @@ Payload transport over varying terrain via highly configurable multi-biped robot
 
 ## Overview
 
-This project implements a decentralized control strategy for multi-legged robots, building upon the work from [RoadRunner](https://github.com/osudrl/roadrunner). Please follow the RoadRunner repository for environment setup. 
+This project implements a decentralized control strategy for multiple bipedal robots, building upon the work from [RoadRunner](https://github.com/osudrl/roadrunner). Please follow the RoadRunner repository for environment setup. 
 
 ## Features
 
